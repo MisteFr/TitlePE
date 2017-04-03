@@ -4,4 +4,4 @@ Usage : /title <player / all> <title> <subtitle> <fadeIn (20 = 1sec)> <duration 
 Only working with Pocketmine (don't support Tesseract)
 
 ---
-If you have any suggestions, ideas of something else to add contact me on Twitter https://twitter.com/Misteboss_mcpe
+If you have any suggestions, ideas of something else to add contact me on Twitter [@Misteboss_mcpe](https://twitter.com/Misteboss_mcpe)
