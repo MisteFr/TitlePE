@@ -42,13 +42,16 @@ $pk->fadeOutTime = $fadeOut;
 $player->dataPacket($pk);
 }
 }
+  
 public function sendTitleText(Player $player,string $title, int $type){
 $pk = new SetTitlePacket();
 $pk->type = $type;
 $pk->text = $title;
 $player->dataPacket($pk);
 }
+  
 public function actionBar(Player $player, string $message){
 $this->sendTitleText($player, $message, SetTitlePacket::TYPE_SET_ACTIONBAR_MESSAGE);
 }
+  
 }
