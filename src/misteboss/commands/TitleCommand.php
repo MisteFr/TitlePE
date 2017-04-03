@@ -22,7 +22,7 @@ public function execute(CommandSender $sender, $currentAlias, array $args) {
 if($this->testPermission($sender)){
 if($sender instanceof Player){
 if(count($args) < 5){
-$sender->sendMessage(Title::prefix."§7Usage : /title <player> <title> <subtitle> <fadeIn> <duration> <fadeOut>");
+$sender->sendMessage(Title::prefix."§7Usage : /title <player / all> <title> <subtitle> <fadeIn (20 = 1sec)> <duration (20 = 1sec)> <fadeOut (20 = 1sec)>");
 }else{
 if($args[0] == 'all'){
 foreach($this->pg->getServer()->getOnlinePlayers() as $players){
