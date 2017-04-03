@@ -1,0 +1,6 @@
+name: Title
+author: Misteboss
+version: 1.0.0
+api: 3.0.0-ALPHA1
+main: misteboss\Title
+description: "Send custom title by using /title"
