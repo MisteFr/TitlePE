@@ -21,12 +21,13 @@ Class API
      * @param int $stay
      * @param int $fadeOut
      */
+     
     public static function addTitle(Player $player, string $title, string $subtitle = "", int $fadeIn = -1, int $stay = -1, int $fadeOut = -1)
     {
         API::resetTitleSettings($player);
         API::setTitleDuration($player, $fadeIn, $stay, $fadeOut);
-        API::sendTitleText($player, $title, SetTitlePacket::TYPE_SET_TITLE);
         API::sendTitleText($player, $subtitle, SetTitlePacket::TYPE_SET_SUBTITLE);
+        API::sendTitleText($player, $title, SetTitlePacket::TYPE_SET_TITLE);
     }
 
     /**
